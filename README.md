@@ -1,6 +1,12 @@
 # RolledPromptMaker
 
-macOS용 프롬프트 템플릿 관리 및 생성 앱
+<p align="center">
+  <img src="app_image.jpeg" alt="RolledPromptMaker Icon" width="200"/>
+</p>
+
+<p align="center">
+  <strong>macOS용 프롬프트 템플릿 관리 및 생성 앱</strong>
+</p>
 
 ## 소개
 
@@ -26,9 +32,9 @@ RolledPromptMaker는 생성형 AI를 사용할 때 반복적으로 사용하는 
 
 ## 설치 방법
 
-1. [Releases](https://github.com/YOUR_USERNAME/RolledPromptMaker/releases) 페이지에서 최신 버전의 `RolledPromptMaker.zip` 다운로드
-2. zip 파일 압축 해제
-3. `RolledPromptMaker.app`을 Applications 폴더로 이동
+1. [Releases](https://github.com/YOUR_USERNAME/RolledPromptMaker/releases) 페이지에서 최신 버전의 `RolledPromptMaker.dmg` 다운로드
+2. DMG 파일을 더블클릭하여 마운트
+3. 나타난 창에서 `RolledPromptMaker.app`을 `Applications` 폴더로 드래그 앤 드롭
 4. 앱 실행 (처음 실행 시 macOS 보안 경고가 나타날 수 있음)
    - "시스템 설정" > "개인 정보 보호 및 보안" > "보안" > "확인 없이 열기" 클릭
 
