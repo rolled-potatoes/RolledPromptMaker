@@ -1,0 +1,23 @@
+name: RolledPromptMaker
+options:
+  bundleIdPrefix: com.rolledpotatoes
+  deploymentTarget:
+    macOS: "14.0"
+  developmentLanguage: ko
+  xcodeVersion: "15.4"
+  generateEmptyDirectories: true
+targets:
+  RolledPromptMaker:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - RolledPromptMaker
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.rolledpotatoes.RolledPromptMaker
+      PRODUCT_NAME: RolledPromptMaker
+      INFOPLIST_FILE: RolledPromptMaker/Info.plist
+      SWIFT_VERSION: "5.0"
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+      ENABLE_HARDENED_RUNTIME: YES
+      CODE_SIGN_STYLE: Automatic

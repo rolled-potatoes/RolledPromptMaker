@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D90D9C75E6299E22956B998 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CABC7645A797638493D6C /* Template.swift */; };
+		1A347D7B528EB735CBE4E6EC /* ResultHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C88DDE988FCCC32B1070A /* ResultHistoryView.swift */; };
+		1CB7407F61C2D2163ADA5E2A /* TemplateEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599194DEE148D60A3F94F727 /* TemplateEditorView.swift */; };
+		35B1CB58147FFA25A1C091AD /* PromptGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5685EAEC708A226238B8EDE /* PromptGeneratorView.swift */; };
+		490EC4BFFB0DAD3B4264342D /* RolledPromptMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF8F18890499590C22560CA /* RolledPromptMakerApp.swift */; };
+		6A0C468F0C2A3CC0936901AE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710AB36C6EFA22EC4CB7926 /* History.swift */; };
+		7E6D81D099BAD10DD9DB150C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02B4CD6327B1D1D040E8FB /* ContentView.swift */; };
+		D3E91DCA3F6674FD2CDFC035 /* TemplateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB4F8E00473A6909E57DAEE /* TemplateListView.swift */; };
+		FB711F439F1FF2D9C79EC3C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BAFA50696D82C3D84CAF1C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C1B8B8F5BE6859C184A07B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		559C88DDE988FCCC32B1070A /* ResultHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHistoryView.swift; sourceTree = "<group>"; };
+		599194DEE148D60A3F94F727 /* TemplateEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateEditorView.swift; sourceTree = "<group>"; };
+		74BAFA50696D82C3D84CAF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AB4F8E00473A6909E57DAEE /* TemplateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateListView.swift; sourceTree = "<group>"; };
+		9710AB36C6EFA22EC4CB7926 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		ABF8F18890499590C22560CA /* RolledPromptMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolledPromptMakerApp.swift; sourceTree = "<group>"; };
+		B20CABC7645A797638493D6C /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		C3B41659F168E2143881AC53 /* RolledPromptMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolledPromptMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB02B4CD6327B1D1D040E8FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5685EAEC708A226238B8EDE /* PromptGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptGeneratorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		25CCF05C7707877FC7490EE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3B41659F168E2143881AC53 /* RolledPromptMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		616AAD86750F797F7CDFA334 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB02B4CD6327B1D1D040E8FB /* ContentView.swift */,
+				E5685EAEC708A226238B8EDE /* PromptGeneratorView.swift */,
+				559C88DDE988FCCC32B1070A /* ResultHistoryView.swift */,
+				599194DEE148D60A3F94F727 /* TemplateEditorView.swift */,
+				8AB4F8E00473A6909E57DAEE /* TemplateListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		873E9DF5B13D008814265632 /* RolledPromptMaker */ = {
+			isa = PBXGroup;
+			children = (
+				74BAFA50696D82C3D84CAF1C /* Assets.xcassets */,
+				1C1B8B8F5BE6859C184A07B4 /* Info.plist */,
+				ABF8F18890499590C22560CA /* RolledPromptMakerApp.swift */,
+				F863DF58960141350CFBF7DF /* Models */,
+				616AAD86750F797F7CDFA334 /* Views */,
+			);
+			path = RolledPromptMaker;
+			sourceTree = "<group>";
+		};
+		9F34B9E43E275051E7DB116B = {
+			isa = PBXGroup;
+			children = (
+				873E9DF5B13D008814265632 /* RolledPromptMaker */,
+				25CCF05C7707877FC7490EE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F863DF58960141350CFBF7DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9710AB36C6EFA22EC4CB7926 /* History.swift */,
+				B20CABC7645A797638493D6C /* Template.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2073B25AC92AD881FFDB2B1 /* RolledPromptMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B47635DCAA9BDD48D017F779 /* Build configuration list for PBXNativeTarget "RolledPromptMaker" */;
+			buildPhases = (
+				6118145B74A262EB4C9B0E2D /* Sources */,
+				641C567073C2749F4E52D502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RolledPromptMaker;
+			packageProductDependencies = (
+			);
+			productName = RolledPromptMaker;
+			productReference = C3B41659F168E2143881AC53 /* RolledPromptMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D783D4EF08237A89290EAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B2073B25AC92AD881FFDB2B1 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD463C2D0CF2D4B53B74283A /* Build configuration list for PBXProject "RolledPromptMaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+			);
+			mainGroup = 9F34B9E43E275051E7DB116B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2073B25AC92AD881FFDB2B1 /* RolledPromptMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		641C567073C2749F4E52D502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB711F439F1FF2D9C79EC3C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6118145B74A262EB4C9B0E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6D81D099BAD10DD9DB150C /* ContentView.swift in Sources */,
+				6A0C468F0C2A3CC0936901AE /* History.swift in Sources */,
+				35B1CB58147FFA25A1C091AD /* PromptGeneratorView.swift in Sources */,
+				1A347D7B528EB735CBE4E6EC /* ResultHistoryView.swift in Sources */,
+				490EC4BFFB0DAD3B4264342D /* RolledPromptMakerApp.swift in Sources */,
+				0D90D9C75E6299E22956B998 /* Template.swift in Sources */,
+				1CB7407F61C2D2163ADA5E2A /* TemplateEditorView.swift in Sources */,
+				D3E91DCA3F6674FD2CDFC035 /* TemplateListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		273A993061527D8B2AE8A533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2E70EDA61E5E25195C518FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RolledPromptMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolledpotatoes.RolledPromptMaker;
+				PRODUCT_NAME = RolledPromptMaker;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D5DF7128A80809C4EAF360A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F24947BA75E644C970510196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RolledPromptMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rolledpotatoes.RolledPromptMaker;
+				PRODUCT_NAME = RolledPromptMaker;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B47635DCAA9BDD48D017F779 /* Build configuration list for PBXNativeTarget "RolledPromptMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24947BA75E644C970510196 /* Debug */,
+				2E70EDA61E5E25195C518FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD463C2D0CF2D4B53B74283A /* Build configuration list for PBXProject "RolledPromptMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DF7128A80809C4EAF360A4 /* Debug */,
+				273A993061527D8B2AE8A533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D783D4EF08237A89290EAB /* Project object */;
+}
