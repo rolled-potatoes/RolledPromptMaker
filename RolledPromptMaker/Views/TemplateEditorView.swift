@@ -8,19 +8,24 @@ struct TemplateEditorView: View {
     let template: Template?
     let isEditMode: Bool
 
-    @State private var templateName: String = ""
-    @State private var templateBody: String = ""
-    @State private var fields: [TemplateField] = []
+    @State private var templateName: String
+    @State private var templateBody: String
+    @State private var fields: [TemplateField]
     @State private var showingAddField = false
 
     init(template: Template?, isEditMode: Bool) {
         self.template = template
         self.isEditMode = isEditMode
 
-        if let template = template {
+        // 수정 모드일 때 기존 템플릿 데이터를 초기값으로 설정
+        if isEditMode, let template = template {
             _templateName = State(initialValue: template.name)
             _templateBody = State(initialValue: template.body)
             _fields = State(initialValue: template.fields)
+        } else {
+            _templateName = State(initialValue: "")
+            _templateBody = State(initialValue: "")
+            _fields = State(initialValue: [])
         }
     }
 
@@ -138,12 +143,19 @@ struct TemplateEditorView: View {
 
     private func saveTemplate() {
         if isEditMode, let template = template {
-            // 편집 모드
+            // 편집 모드: 기존 템플릿 업데이트
             template.name = templateName
             template.body = templateBody
             template.fields = fields
+            
+            // SwiftData가 변경사항을 자동으로 추적하지만, 명시적으로 저장을 시도
+            do {
+                try modelContext.save()
+            } catch {
+                print("템플릿 저장 실패: \(error)")
+            }
         } else {
-            // 생성 모드
+            // 생성 모드: 새 템플릿 생성
             let newTemplate = Template(name: templateName, body: templateBody, fields: fields)
             modelContext.insert(newTemplate)
         }
