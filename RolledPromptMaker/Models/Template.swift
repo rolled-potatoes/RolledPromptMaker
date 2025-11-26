@@ -33,6 +33,35 @@ final class Template: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
+    
+    // Export/Import를 위한 변환 메서드
+    func toExportable() -> ExportableTemplate {
+        ExportableTemplate(
+            id: id,
+            name: name,
+            body: body,
+            fields: fields,
+            createdAt: createdAt
+        )
+    }
+    
+    static func fromExportable(_ exportable: ExportableTemplate) -> Template {
+        Template(
+            id: exportable.id,
+            name: exportable.name,
+            body: exportable.body,
+            fields: exportable.fields
+        )
+    }
+}
+
+// Export/Import를 위한 Codable 구조체
+struct ExportableTemplate: Codable, Identifiable {
+    var id: UUID
+    var name: String
+    var body: String
+    var fields: [TemplateField]
+    var createdAt: Date
 }
 
 struct TemplateField: Codable, Identifiable {
