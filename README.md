@@ -32,11 +32,43 @@ RolledPromptMaker는 생성형 AI를 사용할 때 반복적으로 사용하는 
 
 ## 설치 방법
 
-1. [Releases](https://github.com/YOUR_USERNAME/RolledPromptMaker/releases) 페이지에서 최신 버전의 `RolledPromptMaker.dmg` 다운로드
-2. DMG 파일을 더블클릭하여 마운트
-3. 나타난 창에서 `RolledPromptMaker.app`을 `Applications` 폴더로 드래그 앤 드롭
-4. 앱 실행 (처음 실행 시 macOS 보안 경고가 나타날 수 있음)
-   - "시스템 설정" > "개인 정보 보호 및 보안" > "보안" > "확인 없이 열기" 클릭
+### 1. 다운로드
+[Releases](https://github.com/rolled-potatoes/RolledPromptMaker/releases) 페이지에서 최신 버전의 `RolledPromptMaker-x.x.x.dmg` 다운로드
+
+### 2. 설치
+1. DMG 파일을 더블클릭하여 마운트
+2. 열린 창에서 `RolledPromptMaker.app`을 `Applications` 폴더로 드래그 앤 드롭
+3. Applications 폴더에서 앱을 찾아 실행
+
+### 3. 보안 경고 해결 (중요!)
+
+처음 실행 시 **"Apple은 'RolledPromptMaker.app'에 악성 코드가 없음을 확인할 수 없습니다"** 메시지가 나타날 수 있습니다.
+
+이는 앱이 Apple Developer ID로 서명되지 않았기 때문이며, **악성 코드가 아닙니다**. (오픈소스 프로젝트로 코드를 확인할 수 있습니다)
+
+#### 해결 방법:
+
+**방법 1: 시스템 설정에서 허용 (권장)**
+1. 앱을 실행하려고 시도 (경고 창이 뜸)
+2. `확인`을 클릭하여 창 닫기
+3. `시스템 설정(System Settings)` > `개인 정보 보호 및 보안(Privacy & Security)` 열기
+4. 아래로 스크롤하여 "보안(Security)" 섹션 찾기
+5. "RolledPromptMaker.app이(가) 차단되었습니다" 메시지 옆의 `확인 없이 열기(Open Anyway)` 버튼 클릭
+6. 경고 창에서 `열기(Open)` 클릭
+7. 이후부터는 정상적으로 실행됩니다
+
+**방법 2: 터미널에서 격리 속성 제거**
+```bash
+xattr -cr /Applications/RolledPromptMaker.app
+```
+이 명령어를 실행하면 macOS의 격리 속성이 제거되어 경고 없이 실행됩니다.
+
+**방법 3: Control 키를 누르고 열기**
+1. Applications 폴더에서 `RolledPromptMaker.app`을 찾기
+2. `Control` 키를 누른 채로 앱 클릭
+3. 컨텍스트 메뉴에서 `열기(Open)` 선택
+4. 경고 창에서 `열기(Open)` 클릭
+
 
 ## 사용 방법
 

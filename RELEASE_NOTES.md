@@ -35,6 +35,28 @@
 3. 열린 창에서 `RolledPromptMaker.app`을 `Applications` 폴더로 드래그 앤 드롭
 4. Applications 폴더에서 앱 실행
 
+### ⚠️ 보안 경고 해결 방법
+
+처음 실행 시 **"Apple은 'RolledPromptMaker.app'에 악성 코드가 없음을 확인할 수 없습니다"** 메시지가 나타날 수 있습니다.
+
+이는 앱이 Apple Developer ID로 서명되지 않았기 때문이며, 악성 코드가 아닙니다. (오픈소스 프로젝트입니다)
+
+**해결 방법 1: 시스템 설정에서 허용 (권장)**
+1. 앱 실행 시도 → 경고 창에서 `확인` 클릭
+2. `시스템 설정` > `개인 정보 보호 및 보안` > `보안` 섹션
+3. "RolledPromptMaker.app이 차단되었습니다" 메시지 옆 `확인 없이 열기` 클릭
+4. 경고 창에서 `열기` 클릭
+
+**해결 방법 2: 터미널 사용**
+```bash
+xattr -cr /Applications/RolledPromptMaker.app
+```
+
+**해결 방법 3: Control 키 사용**
+1. Applications 폴더에서 앱을 `Control + 클릭`
+2. 메뉴에서 `열기` 선택
+3. 경고 창에서 `열기` 클릭
+
 ### ZIP 파일 사용
 1. `RolledPromptMaker-1.2.0.zip` 파일 다운로드
 2. 압축 해제
